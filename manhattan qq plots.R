@@ -138,7 +138,7 @@ while (loop) {
   }
 
   if (args[1] == "--col_variant_type") {
-    colVariantType = gsub("-",".",args[2])
+    colVariantType = args[2] #gsub("-",".",args[2])
     hasVariantTypeCol = TRUE
     print(colVariantType)
   }
